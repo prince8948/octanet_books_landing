@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaFacebook, FaTwitter, FaInstagram, FaSearch, FaShoppingCart } from "react-icons/fa";
 import { FaGoogle, FaLinkedin, FaUser } from 'react-icons/fa6';
 import { NavLink } from 'react-router-dom'
+import { MdOutlineMenu } from "react-icons/md";
+
+
+
 const Navbar = () => {
-  
+
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
     <>
-      <header className='headerIcons'>
+      <div className='headerIcons'>
         <ul className='socialIcons'>
           <li>
             <NavLink to="hhts://www.facebook.com" className="icons">{<FaFacebook />} </NavLink>
@@ -28,13 +33,14 @@ const Navbar = () => {
             <NavLink to="hhts://www.facebook.com" className="icons login">Login</NavLink>
           </li>
         </ul>
-      </header>
+      </div>
       {/* navbar */}
+
       <nav>
         <div className="logo">
           <img to="" alt="" />Auther
         </div>
-        <ul className='menu'>
+        <ul className={showMediaIcons ? "menu mobile-menu-link" : "menu"}>
           <li>
             <NavLink to="/" className="menulist">Home</NavLink>
           </li>
@@ -54,7 +60,6 @@ const Navbar = () => {
             <NavLink to="/" className="menulist">Blog</NavLink>
           </li>
         </ul>
-
         <div className="menuIcons">
           <ul>
             <li>
@@ -67,6 +72,11 @@ const Navbar = () => {
               {<FaUser />}
             </li>
           </ul>
+        </div>
+        <div className="hamburger-menu">
+          <NavLink to="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+            <MdOutlineMenu />
+          </NavLink>
         </div>
       </nav>
     </>
