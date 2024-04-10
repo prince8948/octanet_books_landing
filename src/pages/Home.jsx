@@ -2,7 +2,7 @@ import React from 'react'
 import { TbTruckDelivery } from "react-icons/tb";
 import { GoGift } from "react-icons/go";
 import { MdOutlineHeadphones, MdOutlineAccountBalanceWallet} from "react-icons/md";
-import { GiWallet } from "react-icons/gi";
+// import { GiWallet } from "react-icons/gi";
 
 
 

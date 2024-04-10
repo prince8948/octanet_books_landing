@@ -45,19 +45,19 @@ const Navbar = () => {
             <NavLink to="/" className="menulist">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/" className="menulist">Feature</NavLink>
+            <NavLink to="Feature" className="menulist">Feature</NavLink>
           </li>
           <li>
-            <NavLink to="/" className="menulist">Page</NavLink>
+            <NavLink to="Page" className="menulist">Page</NavLink>
           </li>
           <li>
-            <NavLink to="/" className="menulist">Shop</NavLink>
+            <NavLink to="Shop" className="menulist">Shop</NavLink>
           </li>
           <li>
-            <NavLink to="/" className="menulist">Event</NavLink>
+            <NavLink to="Event" className="menulist">Event</NavLink>
           </li>
           <li>
-            <NavLink to="/" className="menulist">Blog</NavLink>
+            <NavLink to="Blog" className="menulist">Blog</NavLink>
           </li>
         </ul>
         <div className="menuIcons">
